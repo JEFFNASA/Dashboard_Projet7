@@ -69,7 +69,8 @@ def predict():
         st.title('_solvency analysis_')
     flag.drop(['SK_ID_CURR'], axis=1, inplace=True)
 
-    url = f"https://flask-api-projet7-ebcfa1feba8b.herokuapp.com/predict/{option}"
+    url = f"https://flask-api-projet7-373d0105bbfe.herokuapp.com/predict/{option}"
+    #url = f"https://flask-api-projet7-ebcfa1feba8b.herokuapp.com/predict/{option}"
     #url = f"http://127.0.0.1:5000/predict/{option}"
     result = requests.get(url, verify=False)
     result.encoding = "utf-8"
